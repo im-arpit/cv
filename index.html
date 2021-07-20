@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Arpit Gautam</title>
+
+  <link rel="icon" href="https://image.flaticon.com/icons/png/128/3135/3135715.png">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@400&family=Euphoria+Script&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style media="screen">
+  body {
+    background-color: #E4F9F5;
+    color: #40514E;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 1px;
+    font-family: 'Merriweather', serif;
+  }
+  h1 {
+    margin: 0 auto;
+    margin-top: 150px;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 90px;
+    color: #01937C;
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    sans-serif; color: #01937C;
+    font-weight: bold;
+
+  }
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11937E;
+    font-weight: bold;
+    font-size: 23px;
+  }
+  p {
+    margin: auto 12% auto 12%;
+    line-height: 2;
+    font-size: 15px
+  }
+  before-hr {
+    padding-bottom: 20px;
+  }
+  .navbar {
+    background-color:#01937C;
+  }
+  .developer {font-size: 15px; font-weight: bold; color: #01937C}
+  .top-container {
+    position: relative;
+    padding-top: 100px;
+  }
+  .cloud {
+    height: 80px;
+    width: 200px;
+  }
+  .top-cloud {
+    position: absolute;
+    right: 200px;
+  }
+  .bottom-cloud {
+    position: absolute;
+    left: 200px;
+  }
+  .mountain {
+    height: 40%;
+    width: 100%;
+    position: relative;
+    top: 80px;
+    left: 0;
+    margin-bottom: 20px;
+  }
+
+  .middle-container {
+    margin: 100px 0;
+  }
+  .profile {
+    height: 150px;
+    width: 150px;
+  }
+
+  .skills {
+    background-color: #01937C;
+    color: #E4F9F5;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .skill-row {
+    width: 55%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+  }
+
+  .skill-img {
+    border-radius: 100%;
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+  }
+  .education {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .edu-img {
+    width: 20%;
+    border: 2px;
+    padding-bottom: 20px;
+  }
+  .edu-img0 {
+    width: 49%;
+    border: 2px;
+    padding-bottom: 20px;
+  }
+
+  .edu-row {
+    padding: 1%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
+
+  .projects {
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #01937C;
+    color: #E4F9F5;
+  }
+  .project-detail {
+    width: 59%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+  }
+  .project-img {
+    width: 27%;
+    float: left;
+    margin-right: 30px;
+
+  }
+
+  .hobbies {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .hobby-img {
+    width: 20%;
+    padding-bottom: 20px;
+    padding-top: 50px;
+  }
+  .bottom-container {
+    padding-top: 50px;
+  }
+
+  .btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+
+  .contact-me {
+    margin: 30px;
+  }
+
+  .footer {
+    margin-top: 100px;
+    background-color: #01937C;
+    margin-bottom: 0px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .mail-logo {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .icons {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+  }
+
+</style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hobbies">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div class="top-container">
+    <img class="top-cloud cloud" src="media/cloud.png" alt="cloud-image">
+    <h1>I'm Arpit</h1>
+    <p class="developer">A Software Developer.</p>
+    <img class="bottom-cloud cloud" src="media/cloud.png" alt="cloud-image">
+    <img class="mountain" src="media/mountain.png" alt="mountain-image">
+  </div>
+  <div class="middle-container">
+    <br>
+    <br>
+    <img class="profile" src="media/profile.png" alt="">
+    <h3>Hello,</h3>
+    <p>I am a developer and my objective is to secure a position where I can efficiently contribute my skills and abilities to the growth of the organization and build my professional career.</p>
+    <p class="before-hr" id="skills"></p>
+    <br>
+
+    <div class="skills">
+      <h2 id="SKILLS" style="color: white;">SKILLS</h2>
+
+      <div class="skill-row">
+        <img class="skill-img" src="https://media.giphy.com/media/2ikwIgNrmPZICNmRyX/giphy.gif" alt="">
+        <h3 style="color: white;">Design and Development</h3>
+        <br>
+        <p>I started learning to code when I was 14 years old because the web and mobile applications I came accross always fascinated me, and I wanted to have one of my own. Overtime, I have gained a wealth of experience designing
+          and
+          developing such applications through <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Python</strong> and <strong>Django</strong>.</p>
+      </div>
+
+      <div class="skill-row">
+        <img class="skill-img" src="media/os.png" alt="">
+
+        <h3 class="aligned" style="color: white;">Operating Systems</h3>
+        <br>
+        <p class="aligned">I have worked with Windows as well as Linux OS (RHEL). I have also automated the operations in Linux via <strong>ANSIBLE</strong> and <strong>Shell Script</strong> as well. I have also done the <strong>Global Certification
+            of RHCSA Exam (2019)</strong> and scored a whole of 83%. I can comfortably work with both of these Operating Systems. </p>
+      </div>
+
+      <div class="skill-row">
+        <img class="skill-img" src="media/git.jpg" alt="">
+
+        <h3 class="aligned" style="color: white;">Version Control</h3>
+        <br>
+        <p class="aligned">I can manage several revision controls of a project using Git Version Control. Though I came through it recently, I am quite familiar with it. I can manage it both via GUI as well as through Terminal.</p>
+      </div>
+    </div>
+    <p id="education"></p>
+    <br>
+    <div class="education">
+      <h2 id="edu">EDUCATION</h2>
+      <div class="row">
+        <div class="col-lg-4 edu-row">
+          <img class="edu-img0" src="media/ugc.png" alt="">
+          <h3>Graduation</h3>
+          <p>I have completed my <strong>Engineering</strong> in <strong>Computer Science</strong> from AKS University, Satna with a score of <strong>7.3 CGPA</strong>.</p>
+          <h3></h3>
+        </div>
+        <div class="col-lg-4 edu-row">
+          <img class="edu-img" src="media/cbse.png" alt="">
+          <h3>Higher Secondary</h3>
+          <p>I have passed my <strong>12th Standard</strong> from Royal Sr. Sec. School, Jabalpur with a score of <strong>64%</strong>.</p>
+        </div>
+        <div class="col-lg-4 edu-row">
+          <img class="edu-img" src="media/icse.png" alt="">
+          <h3>Matriculation</h3>
+          <p>I have cleared my <strong>10th Standard</strong> from St. Claret School, Barakala with a score of <strong>68%</strong>.</p>
+        </div>
+
+      </div>
+
+    </div>
+    <p id="projects"></p>
+    <br>
+    <div class="projects">
+      <h2 style="color: white;">PROJECTS</h2>
+      <div class="project-detail">
+        <img class="project-img" src="media/env-prov.png" alt="">
+        <h3 style="color: white;">Environment Provisioning - Yes Bank Ltd.</h3>
+        <br>
+        <p>This project was to automate the entire environment provisioning process of Yes Bank. It included automation of Linux, Windows, Weblogic, Vcenter, and more tools used by Yes Bank and integrating them through IBM Urban Code Deploy.</p>
+        <p> <strong>Role: </strong>Developer & Tester </p>
+        <p><strong>Technologystack: </strong>Linux, Shell Scripting, Groovy, UCD.</p>
+        <p><strong>Development team size: </strong>15</p>
+
+      </div>
+
+    </div>
+    <p id="hobbies"></p>
+    <br>
+    <div class="hobbies">
+      <h2>HOBBIES</h2>
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="hobby-img" src="https://image.flaticon.com/icons/png/512/2972/2972075.png" alt="">
+          <h3>Music</h3>
+        </div>
+        <div class="col-lg-3">
+          <img class="hobby-img" src="https://image.flaticon.com/icons/png/512/857/857455.png" alt="">
+          <h3>Sports</h3>
+        </div>
+        <div class="col-lg-3">
+          <img class="hobby-img" src="https://image.flaticon.com/icons/png/512/776/776541.png" alt="">
+          <h3>Travelling</h3>
+        </div>
+        <div class="col-lg-3">
+          <img class="hobby-img" src="https://image.flaticon.com/icons/png/512/1161/1161619.png" alt="">
+          <h3>Party</h3>
+        </div>
+
+      </div>
+    </div>
+    <p id="contact"></p>
+    <br>
+    <div class="footer">
+      <br>
+      <h2 style="color: white;">GET IN TOUCH</h2>
+      <a class="btn contact-me" href="mailto:arpitgautam1998@outlook.com?subject=Feedback"><img class="mail-logo" src="https://image.flaticon.com/icons/png/512/732/732200.png" alt="">CONTACT ME</a>
+      <br>
+      <a href="https://www.facebook.com/arpit.gautam.1997"><img class="icons" src="https://image.flaticon.com/icons/png/128/145/145802.png" alt=""></a>
+      <a href="https://twitter.com/Im_ArpitGautam?s=08"><img class="icons" src="https://image.flaticon.com/icons/png/128/145/145812.png" alt=""></a>
+      <a href="https://www.linkedin.com/in/arpit-gautam-2a14121b4/"><img class="icons" src="https://image.flaticon.com/icons/png/128/145/145807.png" alt=""></a>
+      <br>
+      <br>
+      <p>© 2021 Arpit Gautam</p>
+    </div>
+</body>
+</html>
