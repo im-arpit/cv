@@ -30,15 +30,14 @@
   }
   h2 {
     font-family: 'Montserrat', sans-serif;
-    sans-serif; color: #01937C;
+    color: #01937C;
     font-weight: bold;
 
   }
   h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'unset';
     color: #11937E;
-    font-weight: bold;
-    font-size: 23px;
+    font-size: 17px;
   }
   p {
     margin: auto 12% auto 12%;
@@ -91,22 +90,17 @@
     padding-bottom: 50px;
     padding-top: 50px;
   }
-  .skill-row {
-    width: 55%;
-    margin: 100px auto 100px auto;
-    text-align: left;
-    line-height: 2;
-  }
 
   .skill-img {
     border-radius: 100%;
-    width: 25%;
-    float: left;
-    margin-right: 30px;
+    width: 20%;
+    margin-bottom: 10px;
   }
   .education {
     padding-bottom: 50px;
     padding-top: 50px;
+    background-color: #01937C;
+    color: #E4F9F5;
   }
 
   .edu-img {
@@ -130,19 +124,21 @@
   .projects {
     padding-bottom: 50px;
     padding-top: 50px;
-    background-color: #01937C;
-    color: #E4F9F5;
   }
   .project-detail {
-    width: 59%;
     margin: 100px auto 100px auto;
-    text-align: left;
   }
   .project-img {
-    width: 27%;
+    width: 90%;
     float: left;
     margin-right: 30px;
+    border-radius: 10%;
 
+  }
+
+  .skill-row{
+    margin-bottom: 40px;
+    text-align: center;
   }
 
   .hobbies {
@@ -209,6 +205,11 @@
     margin-right: 20px;
   }
 
+  .project-detail p{
+    text-align: left;
+    margin-left: 0px
+  }
+
 </style>
 </head>
 
@@ -229,10 +230,10 @@
           <a class="nav-link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#education">Education</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#hobbies">Hobbies</a>
@@ -256,77 +257,160 @@
     <br>
     <br>
     <img class="profile" src="media/profile.png" alt="">
-    <h3>Hello,</h3>
-    <p>I am a developer and my objective is to secure a position where I can efficiently contribute my skills and abilities to the growth of the organization and build my professional career.</p>
+    <h3 style="font-size: 30px; margin-top: 10px;">Hello,</h3>
+    <p style="color: #01937C;"> As an experienced software developer with several years of expertise, I have a strong foundation in building efficient and user-friendly applications using various programming languages and frameworks. I thrive in cross-functional teams, collaborating with product managers, designers, and fellow developers to deliver robust solutions that align with business goals. My problem-solving skills and adaptability allow me to tackle diverse challenges with creativity and ingenuity. Continuous learning is integral to my professional growth, and I stay updated with the latest advancements in the software industry to deliver cutting-edge solutions. I am passionate about contributing my skills to innovative projects and making a meaningful impact on user experiences.</p>
     <p class="before-hr" id="skills"></p>
     <br>
 
     <div class="skills">
-      <h2 id="SKILLS" style="color: white;">SKILLS</h2>
+      <h2 id="SKILLS" style="color: white; margin-bottom: 20px;">SKILLS</h2>
 
-      <div class="skill-row">
-        <img class="skill-img" src="https://media.giphy.com/media/2ikwIgNrmPZICNmRyX/giphy.gif" alt="">
-        <h3 style="color: white;">Design and Development</h3>
-        <br>
-        <p>I started learning to code when I was 14 years old because the web and mobile applications I came accross always fascinated me, and I wanted to have one of my own. Overtime, I have gained a wealth of experience designing
-          and
-          developing such applications through <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Python</strong> and <strong>Django</strong>.</p>
+      <div class="row">
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+        <div><img class="skill-img" src="media/rails.png" alt=""></div>
+        <div><h3 style="color: white;">Ruby On Rails</h3></div>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/mysql.png" alt="">
+          <h3 class="aligned" style="color: white;">MySQL</h3>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/git.jpg" alt="">
+          <h3 class="aligned" style="color: white;">Version Control</h3>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/docker.png" alt="">
+          <h3 class="aligned" style="color: white;">Docker</h3>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/postgres.svg" alt="">
+          <h3 class="aligned" style="color: white;">Postgres</h3>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/os.png" alt="">
+          <h3 class="aligned" style="color: white;">Operating System</h3>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/nginx.png" alt="">
+          <h3 class="aligned" style="color: white;">Nginx</h3>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/api.png" alt="">
+          <h3 class="aligned" style="color: white;">REST API</h3>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/html.png" alt="">
+          <h3 class="aligned" style="color: white;">HTML</h3>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/css.webp" alt="">
+          <h3 class="aligned" style="color: white;">CSS</h3>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/js.png" alt="">
+          <h3 class="aligned" style="color: white;">Javascript/JQuery</h3>
+        </div>
+
+        <div class="skill-row col-xl-3 col-md-3 col-sm-6">
+          <img class="skill-img" src="media/aws.png" alt="">
+          <h3 class="aligned" style="color: white;">Amazon Web Services</h3>
+        </div>
+      </div>
+    </div>
+    <p id="projects"></p>
+    <br>
+    <div class="projects">
+      <h2>PROJECTS</h2>
+
+      <div class="row">
+        <div class="project-detail col-xl-6 col-md-6 col-sm-6" style="padding-left: 15%;">
+          <img class="project-img" src="media/ott.gif" alt="" style="margin-top: 8%;">
+        </div>
+        <div class="project-detail col-xl-6 col-md-6 col-sm-6">
+          <h3 style="font-size: 23px; margin-left: 0px; text-align: left;">OTT Platform</h3>
+          <br>
+          <p>This web application is an exceptional OTT platform, akin to Netflix, offering users an unparalleled streaming experience. With a vast library of captivating movies, TV shows, and original content, it provides diverse entertainment options to cater to varied tastes. The user-friendly interface ensures seamless navigation and personalized recommendations, delivering a tailored viewing experience. Utilizing cutting-edge streaming technology, it offers high-quality, buffer-free content across multiple devices, allowing an immersive entertainment journey. Its interactive features, such as social sharing, foster a vibrant community of engaged viewers, making web application a premier destination for unparalleled entertainment enjoyment.</p>
+          <p> <strong>Role: </strong>Backend Developer</p>
+          <p><strong>Tech Stack: </strong>Ruby on Rails, PostgreSQL, Redis, S3, mysql, Microservices, Sidekiq</p>
+          <p><strong>Development team size: </strong>8</p>
+        </div>
       </div>
 
-      <div class="skill-row">
-        <img class="skill-img" src="media/os.png" alt="">
-
-        <h3 class="aligned" style="color: white;">Operating Systems</h3>
-        <br>
-        <p class="aligned">I have worked with Windows as well as Linux OS (RHEL). I have also automated the operations in Linux via <strong>ANSIBLE</strong> and <strong>Shell Script</strong> as well. I have also done the <strong>Global Certification
-            of RHCSA Exam (2019)</strong> and scored a whole of 83%. I can comfortably work with both of these Operating Systems. </p>
+      <div class="row">
+        <div class="project-detail col-xl-6 col-md-6 col-sm-6" style="padding-left: 15%;">
+          <img class="project-img" src="media/healthc2.gif" alt="" style="margin-top: 10%;">
+        </div>
+        <div class="project-detail col-xl-6 col-md-6 col-sm-6">
+          <h3 style="font-size: 23px; margin-left: 0px; text-align: left;">Health Care Software</h3>
+          <br>
+          <p>This project is a groundbreaking healthcare integration platform that seamlessly connects EMIS Web and SystemOne, two powerful healthcare systems, to revolutionize patient care. By merging these platforms, healthcare providers gain comprehensive access to patient records, clinical data, and diagnostics, streamlining workflows and improving care coordination. The integrated system enables real-time data exchange, empowering healthcare professionals to make informed decisions promptly. With the combined capabilities of EMIS Web and SystemOne, this project aims to enhance efficiency, accuracy, and patient outcomes, ultimately transforming the healthcare landscape for the better.</p>
+          <p> <strong>Role: </strong>Backend Developer</p>
+          <p><strong>Tech Stack: </strong>Ruby on Rails, PostgreSQL, Sphinx, S3, Integrations, Sidekiq</p>
+          <p><strong>Development team size: </strong>8</p>
+        </div>
       </div>
 
-      <div class="skill-row">
-        <img class="skill-img" src="media/git.jpg" alt="">
-
-        <h3 class="aligned" style="color: white;">Version Control</h3>
-        <br>
-        <p class="aligned">I can manage several revision controls of a project using Git Version Control. Though I came through it recently, I am quite familiar with it. I can manage it both via GUI as well as through Terminal.</p>
+      <div class="row">
+        <div class="project-detail col-xl-6 col-md-6 col-sm-6" style="padding-left: 15%;">
+          <img class="project-img" src="media/project1.gif" alt="" style="margin-top: 10%;">
+        </div>
+        <div class="project-detail col-xl-6 col-md-6 col-sm-6">
+          <h3 style="font-size: 23px; margin-left: 0px; text-align: left;">Home Inspection Software</h3>
+          <br>
+          <p>This project is a comprehensive home inspection software designed to streamline the inspection process for multiple tenants. With robust multi-tenant support, it efficiently handles inspections for various properties and users simultaneously. The software enables inspectors to create detailed inspection reports, capturing all relevant data and visuals in an organized manner. Users can access their inspection records securely from any device, facilitating seamless collaboration and communication. Moreover, the platform offers customization options, allowing tenants to tailor the software to their specific needs and preferences, enhancing efficiency and overall user experience. It has several organisations running live.</p>
+          <p> <strong>Role: </strong>Fullstack Developer</p>
+          <p><strong>Tech Stack: </strong>Ruby on Rails, PostgreSQL, Authorize.net, S3, SES, SNS, Docker, Nginx</p>
+          <p><strong>Development team size: </strong>5</p>
+        </div>
       </div>
+
+      <div class="row">
+        <div class="project-detail col-xl-6 col-md-6 col-sm-6" style="padding-left: 15%;">
+          <img class="project-img" src="media/project3.gif" alt="" style="width: 79%">
+        </div>
+        <div class="project-detail col-xl-6 col-md-6 col-sm-6">
+          <h3 style="font-size: 23px; margin-left: 0px; text-align: left;">School Management Software</h3>
+          <br>
+          <p>This school management platform is a comprehensive solution that empowers teachers, students, and parents with tailored dashboards for seamless communication and collaboration. Teachers can efficiently manage class materials, assignments, and grading, enhancing the learning experience. Students gain access to personalized academic resources, track progress, and engage in interactive learning activities. Parents can monitor their child's performance, receive real-time updates, and communicate directly with teachers for a holistic view of their child's education. With intuitive navigation and user-friendly interfaces, our platform fosters a connected educational ecosystem, fostering success and growth for all stakeholders involved.</p>
+          <p> <strong>Role: </strong>Backend Developer</p>
+          <p><strong>Tech Stack: </strong>Ruby on Rails, PostgreSQL, S3, Sidekiq, IFrames.</p>
+          <p><strong>Development team size: </strong>7</p>
+        </div>
+      </div>
+      <!-- ------------------------------ -->
+
     </div>
     <p id="education"></p>
     <br>
     <div class="education">
-      <h2 id="edu">EDUCATION</h2>
+      <h2 id="edu" style="color: white;">EDUCATION</h2>
       <div class="row">
         <div class="col-lg-4 edu-row">
           <img class="edu-img0" src="media/ugc.png" alt="">
           <h3>Graduation</h3>
-          <p>I have completed my <strong>Engineering</strong> in <strong>Computer Science</strong> from AKS University, Satna with a score of <strong>7.3 CGPA</strong>.</p>
+          <p>I have completed my <strong>Bachelors</strong> in <strong>Computer Science</strong> from AKS University, Satna.</p>
           <h3></h3>
         </div>
         <div class="col-lg-4 edu-row">
           <img class="edu-img" src="media/cbse.png" alt="">
           <h3>Higher Secondary</h3>
-          <p>I have passed my <strong>12th Standard</strong> from Royal Sr. Sec. School, Jabalpur with a score of <strong>64%</strong>.</p>
+          <p>I have passed my <strong>12th Standard</strong> from Royal Sr. Sec. School, Jabalpur.</p>
         </div>
         <div class="col-lg-4 edu-row">
           <img class="edu-img" src="media/icse.png" alt="">
           <h3>Matriculation</h3>
-          <p>I have cleared my <strong>10th Standard</strong> from St. Claret School, Barakala with a score of <strong>68%</strong>.</p>
+          <p>I have cleared my <strong>10th Standard</strong> from St. Claret School, Barakala.</p>
         </div>
-
-      </div>
-
-    </div>
-    <p id="projects"></p>
-    <br>
-    <div class="projects">
-      <h2 style="color: white;">PROJECTS</h2>
-      <div class="project-detail">
-        <img class="project-img" src="media/env-prov.png" alt="">
-        <h3 style="color: white;">Environment Provisioning - Banking Sector.</h3>
-        <br>
-        <p>This project was to automate the entire environment provisioning process of a Bank. It included automation of Linux, Windows, Weblogic, Vcenter, and more tools used by Yes Bank and integrating them through IBM Urban Code Deploy.</p>
-        <p> <strong>Role: </strong>Developer & Tester </p>
-        <p><strong>Technologystack: </strong>Linux, Shell Scripting, Groovy, UCD.</p>
-        <p><strong>Development team size: </strong>15</p>
 
       </div>
 
