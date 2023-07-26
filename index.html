@@ -77,7 +77,7 @@
   }
 
   .middle-container {
-    margin: 100px 0;
+    margin-top: 100px;
   }
   .profile {
     height: 150px;
@@ -210,6 +210,36 @@
     margin-left: 0px
   }
 
+  .section {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.section::before {
+  animation: bounce 1s ease infinite;
+  bottom: 2rem;
+  color: #01937C;
+  content: '╲╱';
+  font-size: 2rem;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+  z-index: 10;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
+
 </style>
 </head>
 
@@ -238,7 +268,7 @@
         <li class="nav-item">
           <a class="nav-link" href="#hobbies">Hobbies</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" style="margin-right: 20px;">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
@@ -246,7 +276,7 @@
     </div>
   </nav>
 
-  <div class="top-container">
+  <div class="top-container section">
     <img class="top-cloud cloud" src="media/cloud.png" alt="cloud-image">
     <h1>I'm Arpit</h1>
     <p class="developer">A Software Developer.</p>
@@ -441,17 +471,17 @@
     </div>
     <p id="contact"></p>
     <br>
-    <div class="footer">
-      <br>
-      <h2 style="color: white;">GET IN TOUCH</h2>
-      <a class="btn contact-me" href="mailto:arpitgautam1998@outlook.com?subject=Feedback"><img class="mail-logo" src="https://image.flaticon.com/icons/png/512/732/732200.png" alt="">CONTACT ME</a>
-      <br>
-      <a href="https://www.facebook.com/arpit.gautam.1997"><img class="icons" src="media/facebook.png" alt=""></a>
-      <a href="https://twitter.com/Im_ArpitGautam?s=08"><img class="icons" src="media/twitter.png" alt=""></a>
-      <a href="https://www.linkedin.com/in/arpit-gautam-2a14121b4/"><img class="icons" src="media/linkedin.png" alt=""></a>
-      <br>
-      <br>
-      <p>© 2021 Arpit Gautam</p>
-    </div>
 </body>
+<div class="footer">
+  <br>
+  <h2 style="color: white;">GET IN TOUCH</h2>
+  <a class="btn contact-me" href="mailto:arpitgautam1998@outlook.com?subject=Feedback"><img class="mail-logo" src="https://image.flaticon.com/icons/png/512/732/732200.png" alt="">CONTACT ME</a>
+  <br>
+  <a href="https://www.facebook.com/arpit.gautam.1997"><img class="icons" src="media/facebook.png" alt=""></a>
+  <a href="https://twitter.com/Im_ArpitGautam?s=08"><img class="icons" src="media/twitter.png" alt=""></a>
+  <a href="https://www.linkedin.com/in/arpit-gautam-2a14121b4/"><img class="icons" src="media/linkedin.png" alt=""></a>
+  <br>
+  <br>
+  <p>© 2021 Arpit Gautam</p>
+</div>
 </html>
